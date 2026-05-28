@@ -1,0 +1,151 @@
+0	ERCF v2 物料清单与采购指南：
+1	Enraged Rabbit Carrot Feeder ERCF v2.0 社区版（基于 Ette 出色的原始设计）
+2	修订日期：2024年2月2日
+3	耗材模块数量：
+4	<< 在此输入需要的通道/模块数量
+8	工具头传感器
+9	合计总数
+10	V1.1 升级用户合计总数
+11	长度
+12	新制作\n数量
+13	v1.1 升级\n数量
+14	耗材缓冲器
+15	工具头切刀
+16	采购选项
+17	部件
+18	规格
+19	来源 1
+20	来源 2
+21	来源 3
+22	来源 4
+23	备注
+24	电子部件
+25	NEMA14 电机 14HS11-1004S
+26	1.8°，12.5Ncm / 17.7oz.in，1A
+27	Stepper Online 官网直购
+29	也可使用 LDO、Moons 或 OEM 等效型号。也可安装 NEMA 17 齿轮步进电机作为替代。为了达到最高 300mm/s 的送料速度，建议选择低转动惯量型号，例如 LDO-35STH28-1004AC3DT。
+30	NEMA17 电机 17HS08-1004S
+31	1.8°，16Ncm / 22.7oz.in，1A
+32	LDO、Moons 或 OEM 等效的薄型 pancake 步进电机，高度 20mm。例如 LDO-42STH20-1004ASHVRN。
+33	Towerpro MG90S 或 Savox SH-0255MG 舵机（推荐）
+34	金属齿轮微型舵机，4.8V 下堵转扭矩 1.8kg/cm 或更高\nMG90S：22.6x28.5x12mm，17.65Ncm | 1.8kg/cm | 24.9oz.in @ 4.8v\nSH-0255MG 或 SH-0255MGP（新版）：22.8x29.4x12mm，31Ncm | 3.1kg/cm | 43.1oz.in @ 4.8v
+39	Savox 是推荐的高端舵机选择，比 Towerpro 及其克隆型号有更大的扭矩和保持力。舵机还需要良好的 5V 电源才能达到最大扭矩；对于使用标准 1A 线性 7805 稳压器的旧版 ERCF Easy BRD MCU 来说，这可能比较困难。
+40	Binky 编码器
+41	为 ERCF 定制设计，用于克服原始 TCRT5000 红外传感器的限制和调试难点
+46	Binky 是 mneuhaus 的开源设计。你可以从列出的供应商购买，也可以使用项目 GitHub 上的 Gerber 文件自行制作。\nhttps://github.com/mneuhaus/EnragedRabbitProject/tree/main/usermods/Binky
+48	Sakoda.booth.pm（日本）
+50	Omron D2F-5L、D2F-01F 或 D2F-01L 微动开关
+51	D2F-01F Omron 可用于 ERCT
+55	Neopixel（ERCT 可选）
+56	RGBW 或 RGB。也可以将 Neopixel 用于 ERCF LED 围裙灯
+57	用于微动开关、齿轮箱、通道、LED 的接线
+58	推荐 22-24AWG 硅胶线（红线）
+59	2 米
+60	推荐 22-24AWG 硅胶线（黑线）
+61	LED 接线（信号）
+62	推荐 22-24AWG 硅胶线（绿线）
+63	用于 ERCF LED 围裙灯的 WS2812 LED 灯带（可选）
+64	切成单颗 LED 使用（也可使用 neopixels）（2 根线）
+65	五金件
+66	n x Bondtech / BMG 挤出机齿轮套件
+67	耗材通道数量 + 1
+69	不需要金刚石涂层；对本用途来说“够用”即可。
+70	2020 T 型槽铝型材
+71	长度根据耗材模块数量变化
+73	从本地供应商采购。
+74	8mm 光轴
+76	如果从 ERCF v1.x 升级，需要新的更长 8mm 光轴。如果暂时无法快速采购，可以临时减少 1 个滑车继续制作。请使用不锈钢光轴！
+77	D 型切边 5mm 轴
+79	AliExpress Link CNC 5mm 普通轴
+80	如果从 ERCF v1.x 升级，可以使用相同长度的 D 型切边轴。POWGE 有多种长度的预制 D 型切边杆，也可以购买普通 5mm 轴料，自行测量并打磨/锉出 BMG 紧定螺丝的缺口。
+81	4 号切刀片
+84	LM8UU 轴承或 RJ4JP-01-08
+85	8mm 轴承
+87	608ZZ 轴承
+88	有时会被错误地称为 MR608ZZ
+89	623ZZ 轴承
+90	光滑轴承
+92	V623ZZ（铬钢）
+93	Fushi 的 V623ZZ 铬钢版本很好，但价格稍高。
+94	V623ZZ 轴承
+95	V 槽轴承
+96	MR85ZZ 轴承
+97	最低：齿轮箱 3 个轴承 + 每第 3 个耗材模块 1 个
+98	设计上可以在每个耗材模块中安装轴承，或每隔一个模块安装。最低要求为每 3 个耗材模块安装一次。
+99	紧固件
+100	M2x6mm 或 M2x8mm 自攻螺丝
+101	将舵机安装到活动安装座中（不能太长）
+102	M2x10mm 内六角圆柱头螺丝 SHCS 或半圆头螺丝 BHCS
+103	微动开关用螺丝
+104	M2.5x16 SHCS
+105	M3 热熔铜螺母（M3x5x4mm）
+106	Voron 标准热熔嵌件
+108	M3x3mm 紧定螺丝
+110	M3x6mm SHCS
+111	M3x8mm BHCS
+112	M3x8mm FHCS
+113	用于拖链的平头沉头螺丝。也可使用 BHCS 或 SHCS，因为拖链内只穿过少量线材。
+114	M3x8mm SHCS
+115	M3x12mm SHCS
+116	M3x16mm SHCS
+117	M3x16mm BHCS
+118	也可以使用 SHCS
+119	M3x20mm FHCS
+120	M3x20mm SHCS
+121	M3x25mm SHCS
+122	M3x40mm SHCS
+123	M3 T 型弹片螺母
+126	M3 垫圈
+127	M3 螺母 DIN934
+128	（或 ISO 4032）
+129	M5x30mm BHCS
+130	M5x16mm BHCS
+131	M5 尼龙防松螺母
+132	运动部件
+133	GT2 20T（6mm 宽）同步轮（5mm 孔）
+134	GT2 20T（6mm 宽）带齿惰轮（5mm 孔）
+135	否
+136	GT2 皮带 6mm（开口）
+137	长度根据耗材通道数量变化。\n最小长度：（GT2 180° 圆弧长度（20）+ 57.4 +（模块数 * 滑车宽度））* 2
+138	最小购买长度为 1 米。升级时需要更长的 GT2 皮带。
+139	GT2 闭环皮带（6mm 宽）- 188mm
+140	杂项
+141	2.7mm 扎带
+142	多备一些，永远不会嫌多
+143	3x2mm 圆形钕磁铁
+144	N35 或更强（例如 N52）
+146	5.5 mm 滚珠轴承
+147	不锈钢
+148	6x12mm 压缩弹簧，线径 1mm
+149	10mm 到 15mm 长压缩弹簧
+150	TriangleLab BMG DDB 克隆套件或正版 BMG 套件中的弹簧尺寸正合适：12x6x1mm。用于预紧调节器，以微调舵机啮合。
+151	0.4x4x15 压缩弹簧
+152	线径 0.4mm；直径 4mm；长度 15mm（来自圆珠笔）
+153	6x3mm 圆形钕磁铁
+154	如果是升级，可以取出现有磁铁、清除胶水后重复使用。
+155	7X7 拖链
+156	链节长度 +（2）个螺丝固定端头（每个 23mm）
+157	根据制作尺寸调整。TwoTrees 标准购买长度为 1 米。
+158	ECAS Bowden 卡扣
+159	ECAS Bowden 接头
+160	反向 Bowden 使用 ID2.5mm OD4mm PTFE 管\n其他位置使用 ID3mm OD4mm PTFE 管（包括 ERCT）
+161	只使用正品 PTFE 管（乳白色，不要透明管）
+162	各种
+163	根据你的布局以及到打印机、耗材缓冲器和干燥箱/料盘的距离进行调整。\n注意：不要使用 FEP 管，也不要使用任何标称透明 PTFE 的管材，因为更高的摩擦系数会增加系统阻力和负载。
+164	Klipper 兼容 MCU / 控制板选项：紧凑型、2 路驱动 MCU 选项、3 个 3 针连接器（3v3 和 5V）、以及 4 个以上限位开关连接器。
+165	BTT MMB CAN V1.0 ERCF 控制板（PREGATE 传感器最多 9-11 通道；10+ 通道需要移除 DIAG 引脚并手动校准选择器）
+166	带 2 个 TMC2209 或等效 EZ 驱动板
+169	推荐用于新制作
+170	Fystec Enraged Rabbit Burrow Board（最多 13 通道）
+171	TMC2209 或等效驱动，带堵转检测和电流控制
+173	Mellow Fly ERCF EASY BRD CAN（LED 选项需要共用舵机电源）
+175	ERCF Easy BRD（无 LED 选项 - 无 PREGATE 开关 - 不推荐使用的板）
+176	来自 ERCF v1.x 套件或单独采购。优先选择带降压转换器的版本，而不是标准 7805 线性 5V 稳压器，以满足舵机峰值电流需求（1A 以上）。\nERCF Easy BRD 是 Tircown 设计的开源项目。\nhttps://github.com/Tircown/ERCF-easy-brd
+177	远程 MCU（可选）：如果你想让 ERCF 从打印机 MCU 或尺寸过大、无法安装在 ERCF 2020 铝型材上的闲置 MCU 受控，可使用此方案：打印带外露 MicroFit3 安装位的替代齿轮电机座 STL，以连接到你想用的 MCU。
+178	线缆
+179	MicroFit 4 位插头（43640-0401）
+180	MicroFit 5 位插头（43640-0501）
+181	MicroFit 4 位母座（43645-0400）
+182	MicroFit 5 位母座（43645-0500）
+183	MicroFit3 母端子（43030-0007）
+184	MicroFit3 公端子（43031-0007）
